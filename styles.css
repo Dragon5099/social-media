@@ -1,0 +1,386 @@
+/* تحسين الأداء العام */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: #000;
+    color: #fff;
+    line-height: 1.6;
+}
+
+/* الوضع النهاري */
+body.light-mode {
+    background: #f9f9f9;
+    color: #333;
+}
+
+body.light-mode .neon-text {
+    color: #333;
+    text-shadow: none;
+}
+
+body.light-mode .btn,
+body.light-mode .follow-btn {
+    background: #333;
+    color: #fff;
+}
+
+/* تأثير الكتابة بالنيون */
+.neon-text {
+    font-size: 4rem;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 100px;
+    color: #fff;
+    text-shadow: 
+        0 0 7px #ff00e1,
+        0 0 10px #ff00e1,
+        0 0 21px #ff00e1,
+        0 0 42px #ff00e1,
+        0 0 82px #ff00e1,
+        0 0 92px #ff00e1,
+        0 0 102px #ff00e1,
+        0 0 151px #ff00e1;
+    animation: neon 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes neon {
+    from {
+        text-shadow: 
+            0 0 7px #ff00e1,
+            0 0 10px #ff00e1,
+            0 0 21px #ff00e1,
+            0 0 42px #ff00e1,
+            0 0 82px #ff00e1,
+            0 0 92px #ff00e1,
+            0 0 102px #ff00e1,
+            0 0 151px #ff00e1;
+    }
+    to {
+        text-shadow: 
+            0 0 7px #ff00e1,
+            0 0 10px #ff00e1,
+            0 0 21px #ff00e1,
+            0 0 42px #ff00e1,
+            0 0 82px #ff00e1,
+            0 0 122px #ff00e1,
+            0 0 151px #ff00e1;
+    }
+}
+
+/* قائمة التنقل الثابتة */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #1e1e1e;
+    padding: 10px 20px;
+    z-index: 1000;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+}
+
+.navbar a:hover {
+    color: #ff00e1;
+}
+
+/* الصفحة الرئيسية مع تأثير Parallax */
+.neon-header {
+    background: url('background.jpg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-attachment: fixed;
+}
+
+.subtext {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #ff00e1;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background: #ff5eff;
+}
+
+/* قسم وسائل التواصل */
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.social-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* تأثير النيون لكل وسيلة تواصل */
+.neon-link {
+    font-size: 1.5rem;
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    margin-bottom: 10px;
+}
+
+.instagram {
+    text-shadow: 
+        0 0 7px #e1306c,
+        0 0 10px #e1306c,
+        0 0 21px #e1306c,
+        0 0 42px #e1306c,
+        0 0 82px #e1306c,
+        0 0 92px #e1306c,
+        0 0 102px #e1306c,
+        0 0 151px #e1306c;
+}
+
+.instagram:hover {
+    text-shadow: 
+        0 0 7px #e1306c,
+        0 0 10px #e1306c,
+        0 0 21px #e1306c,
+        0 0 42px #e1306c,
+        0 0 82px #e1306c,
+        0 0 122px #e1306c,
+        0 0 151px #e1306c;
+}
+
+.facebook {
+    text-shadow: 
+        0 0 7px #3b5998,
+        0 0 10px #3b5998,
+        0 0 21px #3b5998,
+        0 0 42px #3b5998,
+        0 0 82px #3b5998,
+        0 0 92px #3b5998,
+        0 0 102px #3b5998,
+        0 0 151px #3b5998;
+}
+
+.facebook:hover {
+    text-shadow: 
+        0 0 7px #3b5998,
+        0 0 10px #3b5998,
+        0 0 21px #3b5998,
+        0 0 42px #3b5998,
+        0 0 82px #3b5998,
+        0 0 122px #3b5998,
+        0 0 151px #3b5998;
+}
+
+.twitter {
+    text-shadow: 
+        0 0 7px #1da1f2,
+        0 0 10px #1da1f2,
+        0 0 21px #1da1f2,
+        0 0 42px #1da1f2,
+        0 0 82px #1da1f2,
+        0 0 92px #1da1f2,
+        0 0 102px #1da1f2,
+        0 0 151px #1da1f2;
+}
+
+.twitter:hover {
+    text-shadow: 
+        0 0 7px #1da1f2,
+        0 0 10px #1da1f2,
+        0 0 21px #1da1f2,
+        0 0 42px #1da1f2,
+        0 0 82px #1da1f2,
+        0 0 122px #1da1f2,
+        0 0 151px #1da1f2;
+}
+
+.youtube {
+    text-shadow: 
+        0 0 7px #ff0000,
+        0 0 10px #ff0000,
+        0 0 21px #ff0000,
+        0 0 42px #ff0000,
+        0 0 82px #ff0000,
+        0 0 92px #ff0000,
+        0 0 102px #ff0000,
+        0 0 151px #ff0000;
+}
+
+.youtube:hover {
+    text-shadow: 
+        0 0 7px #ff0000,
+        0 0 10px #ff0000,
+        0 0 21px #ff0000,
+        0 0 42px #ff0000,
+        0 0 82px #ff0000,
+        0 0 122px #ff0000,
+        0 0 151px #ff0000;
+}
+
+.discord {
+    text-shadow: 
+        0 0 7px #7289da,
+        0 0 10px #7289da,
+        0 0 21px #7289da,
+        0 0 42px #7289da,
+        0 0 82px #7289da,
+        0 0 92px #7289da,
+        0 0 102px #7289da,
+        0 0 151px #7289da;
+}
+
+.discord:hover {
+    text-shadow: 
+        0 0 7px #7289da,
+        0 0 10px #7289da,
+        0 0 21px #7289da,
+        0 0 42px #7289da,
+        0 0 82px #7289da,
+        0 0 122px #7289da,
+        0 0 151px #7289da;
+}
+
+/* صور GIF الخاصة بكل وسيلة تواصل */
+.social-gif {
+    max-width: 50px;
+    margin-top: 5px;
+}
+
+/* زر "متابعة الآن" */
+.follow-btn {
+    display: inline-block;
+    padding: 5px 10px;
+    background: #ff00e1;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: all 0.3s ease;
+}
+
+.follow-btn:hover {
+    background: #ff5eff;
+}
+
+/* عداد المتابعين */
+.followers {
+    font-size: 1rem;
+    margin-top: 5px;
+    color: #ccc;
+}
+
+/* زر المشاركة */
+.share-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #1da1f2;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: all 0.3s ease;
+}
+
+.share-btn:hover {
+    background: #007bff;
+}
+
+/* رسالة التفاعل */
+.interaction-message {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    color: #ccc;
+}
+
+/* قسم التقييمات */
+.testimonials {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.testimonials p {
+    background: #1e1e1e;
+    padding: 10px;
+    border-radius: 5px;
+    max-width: 400px;
+    text-align: center;
+}
+
+/* قسم التواصل مع الزوار */
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 20px auto;
+}
+
+form input,
+form textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    padding: 10px;
+    background: #ff00e1;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+form button:hover {
+    background: #ff5eff;
+}
+
+/* دعم الاستجابة (Responsive Design) */
+@media (max-width: 768px) {
+    .neon-text {
+        font-size: 3rem;
+    }
+
+    .social-links {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .social-gif {
+        max-width: 40px;
+    }
+}
