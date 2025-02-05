@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>محفظتي الشخصية</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- قائمة التنقل الثابتة -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="#home">الرئيسية</a></li>
+            <li><a href="#about">نبذة عني</a></li>
+            <li><a href="#contact">وسائل التواصل</a></li>
+        </ul>
+    </nav>
+
+    <!-- الصفحة الرئيسية -->
+    <header id="home" class="neon-header parallax">
+        <h1 class="neon-text">مرحبًا، أنا [Dragon]</h1>
+        <p class="subtext">شغوف بالتكنولوجيا وألعاب الفيديو</p>
+        <a href="#contact" class="btn">تواصل معي</a>
+    </header>
+
+    <!-- قسم نبذة عني -->
+    <section id="about" class="section">
+        <h2>نبذة عني</h2>
+        <p>مرحبًا! أنا Dragon,، أعمل كمطور ومبرمج ويب  بتصميم المواقع والتطبيقات والالعاب .</p>
+    </section>
+
+    <!-- قسم آخر منشوراتي -->
+    <section class="section">
+        <h2>آخر منشوراتي</h2>
+        <div class="post-carousel">
+            <div class="post-item">
+                <iframe src="https://www.instagram.com/p/DEDjd5bI4km/" width="400" height="480" frameborder="0"></iframe>
+            </div>
+            <div class="post-item">
+                <a class="twitter-timeline" data-width="400" data-height="600" href="https://twitter.com/YourTwitterUsername?ref_src=twsrc%5Etfw">Tweets by YourTwitterUsername</a>
+                <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم وسائل التواصل -->
+    <section id="contact" class="section">
+        <h2>وسائل التواصل الاجتماعي</h2>
+        <div class="social-links">
+            <!-- Instagram -->
+            <div class="social-item">
+                <a href="https://www.instagram.com/dragon_gaming_master/" class="neon-link instagram">Instagram</a>
+                <img src="https://files.cults3d.com/uploaders/25460083/illustration-file/2bfec2b1-cf0a-4147-8a1c-51b4bb1e8853/1-instagram.gif" alt="Instagram GIF" class="social-gif">
+                <p class="followers">المتابعين: 1.151+</p>
+                <a href="https://www.instagram.com/dragon_gaming_master/" class="follow-btn">تابع الآن</a>
+            </div>
+
+            <!-- Facebook -->
+            <div class="social-item">
+                <a href="https://facebook.com" class="neon-link facebook">Facebook</a>
+                <img src="https://cdn.dribbble.com/users/427761/screenshots/2830628/facebook.gif" alt="facebook.gif" class="social-gif">
+                <p class="followers">المتابعين: 200+</p>
+                <a href="https://facebook.com" class="follow-btn">تابع الآن</a>
+            </div>
+
+            <!-- Twitter -->
+            <div class="social-item">
+                <a href="https://twitter.com" class="neon-link twitter">Twitter</a>
+                <img src="https://cdnl.iconscout.com/lottie/premium/thumb/twitter-x-logo-9535945-7759034.gif" alt="Twitter GIF" class="social-gif">
+                <p class="followers">المتابعين: 0+</p>
+                <a href="https://twitter.com" class="follow-btn">تابع الآن</a>
+            </div>
+
+            <!-- YouTube -->
+            <div class="social-item">
+                <a href="https://www.youtube.com/@dragon_gaming_master" class="neon-link youtube">YouTube</a>
+                <img src="https://media.tenor.com/6TwUFuzcjOQAAAAd/youtube.gif" alt="YouTube GIF" class="social-gif">
+                <p class="followers">المشتركين: 1.480+</p>
+                <a href="https://www.youtube.com/@dragon_gaming_master" class="follow-btn">اشترك الآن</a>
+            </div>
+
+            <!-- Discord -->
+            <div class="social-item">
+                <a href="https://discord.com/invite/Bwm9kUFZaN?fbclid=PAZXh0bgNhZW0CMTEAAabJKn1wh_o6gV-u4iP5I6dGNdXFS0_B5Hh2H8_3M_v-YeZ5S0KlaDHapWQ_aem_gF99IWfb6LIlHafgsTmxiA" class="neon-link discord">Discord</a>
+                <img src="https://media1.tenor.com/images/4eed6e3b05c52bc26c20556c53d1d90e/tenor.gif?itemid=17250147" alt="Discord GIF" class="social-gif">
+                <p class="followers">الأعضاء: 30+</p>
+                <a href="https://discord.com/invite/Bwm9kUFZaN?fbclid=PAZXh0bgNhZW0CMTEAAabJKn1wh_o6gV-u4iP5I6dGNdXFS0_B5Hh2H8_3M_v-YeZ5S0KlaDHapWQ_aem_gF99IWfb6LIlHafgsTmxiA" class="follow-btn">انضم الآن</a>
+            </div>
+        </div>
+
+        <!-- زر المشاركة -->
+        <button onclick="shareOnFacebook()" class="share-btn">شاركني على Facebook</button>
+        <button onclick="shareOnTwitter()" class="share-btn">شاركني على Twitter</button>
+
+        <!-- دعوة للتفاعل -->
+        <p class="interaction-message">لا تتردد في متابعتي والتفاعل معي على وسائل التواصل الاجتماعي!</p>
+    </section>
+
+    <!-- قسم التقييمات -->
+    <section class="section">
+        <h2>التقييمات</h2>
+        <div class="testimonials">
+            <p>"أحب محتواك! دائماً ما أتعلم منه الكثير." - أحمد علي</p>
+            <p>"من أفضل الأشخاص الذين أتابعهم على الإنترنت." - سارة محمد</p>
+        </div>
+    </section>
+
+    <!-- قسم التواصل مع الزوار -->
+    <section class="section">
+        <h2>تواصل معي</h2>
+        <form action="#" method="POST">
+            <input type="text" placeholder="اسمك" required>
+            <input type="email" placeholder="بريدك الإلكتروني" required>
+            <textarea placeholder="رسالتك" required></textarea>
+            <button type="submit" class="btn">إرسال</button>
+        </form>
+    </section>
+
+    <!-- قسم الوضع الليلي/النهاري -->
+    <button id="theme-toggle">تبديل الوضع</button>
+
+    <!-- قدم الموقع -->
+    <footer>
+        <p>&copy; 2025 - محفظتي الشخصية</p>
+    </footer>
+
+    <!-- JavaScript for sharing and theme toggle -->
+    <script>
+        // زر المشاركة
+        function shareOnFacebook() {
+            window.open(`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent('https://yourwebsite.com')}`, '_blank');
+        }
+
+        function shareOnTwitter() {
+            window.open(`https://twitter.com/intent/tweet?url=${encodeURIComponent('https://yourwebsite.com')}&text=تحقق من هذا الموقع الرائع`, '_blank');
+        }
+
+        // تبديل الوضع الليلي/النهاري
+        const themeToggle = document.getElementById('theme-toggle');
+        let isDarkMode = true;
+
+        themeToggle.addEventListener('click', () => {
+            document.body.classList.toggle('light-mode');
+            isDarkMode = !isDarkMode;
+            themeToggle.textContent = isDarkMode ? 'الوضع الليلي' : 'الوضع النهاري';
+        });
+    </script>
+</body>
+</html>
